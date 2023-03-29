@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+:root {
+    --dark-blue: hsl(235, 24%, 19%);
+    --very-dark-blue: hsl(235, 21%, 11%);
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+}
+
+.App {
+    min-height: 100vh;
+    background-size: 100% auto;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+.App-dark {
+    background-color: var(--very-dark-blue);
+    background-image: url(./images/bg-desktop-dark.jpg);
+    color: #fff;;
+}
+.App-light {
+    background-color: #fff;
+    background-image: url(./images/bg-desktop-light.jpg);
+    color: #000;
+}
+.wrapper {
+    min-height: 100vh;
+}
+.title {
+    color: #fff;
+    letter-spacing: 0.5rem;
+}
+
+.list-item {
+    padding: 10px 15px;
+    text-align: left;
+}
+
+.App-dark .list-item {
+    background-color: var(--dark-blue);
+}
+
+.App-light .list-item {
+    background-color: #fff;
+}
+
+.btn:active {
+    border: none;
+}
+
+.form-control {
+    border: none;
+    background: transparent;
+    color: inherit;
+}
+.form-control:focus {
+    outline: none;
+    box-shadow: none;
+    border: none;
+    color: inherit;
+    background-color: transparent;
+}
+
+ul {
+    list-style-type: none;
+}
+.App-dark .todos-list li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.App-light .todos-list li {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.drop-shadow {
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.3);
+}
+
+a {
+    text-decoration: none;
+}
+
+.todos-list-controller a,
+.todos-list-controller p {
+    color: gray;
+    font-size: 14px;
+}
+.todos-list-controller a {
+    cursor: pointer;
+}
+
+.App-dark .todos-list-controller a:hover {
+    color: #fff;
+}
+.App-light .todos-list-controller a:hover {
+    color: #000;
+}
+.todos-list-controller a.selected {
+    color: hsl(220, 98%, 61%);
+}
+.check-wrapper {
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    background: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.list-item:hover .check-wrapper{
+    background-image: linear-gradient(45deg, hsl(280, 87%, 65%), hsl(192, 100%, 67%));
+}
+.item-state {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: var(--dark-blue);
+}
+
+.check-wrapper.completed
+{
+    background-image: linear-gradient(45deg, hsl(280, 87%, 65%), hsl(192, 100%, 67%));
+}
+
+.check-wrapper.completed .item-state {
+    background-image: url(./images/icon-check.svg), linear-gradient(45deg, hsl(280, 87%, 65%), hsl(192, 100%, 67%));
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.App-light .item-state  {
+    background: #fff;
+}
+.pointer {
+    cursor: pointer;
+}
