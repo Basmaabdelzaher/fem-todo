@@ -44,6 +44,9 @@ function App() {
     setTodos(todos.filter(todo => todo.id !== todoId ));
   }
 
+  const clearCompleted = () => {
+    setTodos(todos.filter(todo => todo.completed !== true));
+  }
   return (
     <div
       className={`App container-fluid ${
@@ -80,7 +83,7 @@ function App() {
           {/* TODOS LIST */}
           <div className="row">
             <div className="col-12">
-              <TodosList todos={todos} markAsCompleted={markAsCompleted} deleteTodo={deleteTodo} />
+              <TodosList todos={todos} markAsCompleted={markAsCompleted} deleteTodo={deleteTodo} clearCompleted={clearCompleted}/>
             </div>
           </div>
         </div>
