@@ -23,9 +23,9 @@ const TodosList = ({ todos, markAsCompleted, deleteTodo, clearCompleted }) => {
       <div className="todos-list-controller d-flex justify-content-between align-items-baseline list-item">
         <p className="m-0">{ leftTodos } items left</p>
         <div>
-          <a style={{color: todosFilter === 'all'? 'blue' : 'inherit'}} className="mx-2" onClick={() => setTodosFilter('all')}>All</a>
-          <a style={{color: todosFilter === 'active'? 'blue' : 'inherit'}} className="mx-2" onClick={() => setTodosFilter('active')}>Active</a>
-          <a style={{color: todosFilter === 'completed'? 'blue' : 'inherit'}}className="mx-2" onClick={() => setTodosFilter('completed')}>Completed</a>
+          <a style={{color: todosFilter === 'all'? '#3A7BFD' : 'inherit'}} className="mx-2" onClick={() => setTodosFilter('all')}>All</a>
+          <a style={{color: todosFilter === 'active'? '#3A7BFD' : 'inherit'}} className="mx-2" onClick={() => setTodosFilter('active')}>Active</a>
+          <a style={{color: todosFilter === 'completed'? '#3A7BFD' : 'inherit'}}className="mx-2" onClick={() => setTodosFilter('completed')}>Completed</a>
         </div>
         <a className="" onClick={clearCompleted}>Clear Completed</a>
       </div>

@@ -10,17 +10,17 @@ function App() {
   const todosDefault = [
     {
       id: 0,
-      title: "todo 1",
+      title: "Buy milk",
       completed: false,
     },
     {
       id: 1,
-      title: "todo 2",
+      title: "Tidy your room",
       completed: false,
     },
     {
       id: 2,
-      title: "todo 3",
+      title: "Study your lessons",
       completed: true,
     },
   ];
