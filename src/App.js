@@ -15,7 +15,7 @@ function App() {
     },
     {
       id: 1,
-      title: "Tidy your room",
+      title: "Tidy up your room",
       completed: false,
     },
     {
@@ -54,7 +54,7 @@ function App() {
       }`}
     >
       <div className="wrapper row justify-content-center pt-5">
-        <div className="col-md-7">
+        <div className="col-11 col-md-5">
           {/* TITLE + DARK MODE CONTROLLER */}
           <div className="row mb-3">
             <div className="col-9">
